@@ -2,7 +2,7 @@ const dolar = 0.0053;
 const euro = 0.0049;
 const real = 0.027;
 
-
+function cambio (){
 let continuar;
 
 do {
@@ -32,7 +32,8 @@ do {
 
 } while (continuar != "NO")
 
-
+}
+cambio()
 
 
 

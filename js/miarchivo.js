@@ -5,11 +5,10 @@ let real = 0.027;
 
 const Monedas = ['ARS', 'USD', 'BRL', 'EUR', 'MXN', 'CNY', 'PEN', 'VES', 'UYU', 'COP']
 console.log(Monedas.join(" / "))
-const monedasDisponibles = Monedas.slice(0,4) 
-console.log("Las monedas disponibles para hacer la conversión son: " + monedasDisponibles)
+const monedasDisponibles = Monedas.slice(0, 4)
+monedasDisponibles.forEach((monedaDisponible) => console.log("La moneda se encuentra disponible"))
 console.log(Monedas.includes('CLP'))
-
-console.log ("------------")
+console.log("------------")
 
 function divisa(peso, moneda, valor) {
     this.peso = peso;
@@ -33,7 +32,9 @@ divisa4.convertir();
 divisa5.convertir();
 divisa6.convertir();
 
-console.log ("------------")
+
+
+console.log("------------")
 function cambio() {
     let continuar;
 
@@ -68,7 +69,8 @@ function cambio() {
 
 }
 cambio()
- 
+
+
 
 
 
